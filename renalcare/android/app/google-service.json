@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "783095741169",
+    "project_id": "renal-care-6cf1c",
+    "storage_bucket": "renal-care-6cf1c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:783095741169:android:5e60c673273a2de8124750",
+        "android_client_info": {
+          "package_name": "com.yankees.renalcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "783095741169-tb7e0n1kntvdsg4eeo3uqnt1ufvm5jjf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yankees.renalcare",
+            "certificate_hash": "b0011402e49901971c69cdbfd7c763655689cffb"
+          }
+        },
+        {
+          "client_id": "783095741169-eip6p31pnbf432ubdv2kq50o7gpt9a05.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFU1hirL2aVtToediZOJyXxU_XgMsrMqo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "783095741169-eip6p31pnbf432ubdv2kq50o7gpt9a05.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
