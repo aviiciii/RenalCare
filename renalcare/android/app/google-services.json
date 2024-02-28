@@ -12,7 +12,20 @@
           "package_name": "com.example.renalcare"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "389383541718-b01mb9rpd06pbtmmt0hoiaboj48opq98.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.renalcare",
+            "certificate_hash": "53e52ed7b38f00936369b2f25eda0ddeba120e9d"
+          }
+        },
+        {
+          "client_id": "389383541718-53ra4p4g2f3lk443pi21uv2b4aquojs6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyD6KE2L_RQAkQhuwpDE_9ZWvCLtbUinsAg"
@@ -20,7 +33,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "389383541718-53ra4p4g2f3lk443pi21uv2b4aquojs6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "389383541718-bum9baitf4bmcbdg3rtcr8phvuc9dn7j.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.renalcare"
+              }
+            }
+          ]
         }
       }
     }
