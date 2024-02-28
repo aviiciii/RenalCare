@@ -1,3 +1,17 @@
+buildscript{
+    ext.kotlin_version='1.9.22'
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.3'
+        classpath 'com.google.gms:google-services:4.3.3'
+        classpath 'com.google.gms.google-services:4.4.1' apply false
+    }
+}
+
+
 allprojects {
     repositories {
         google()
@@ -16,3 +30,4 @@ subprojects {
 tasks.register("clean", Delete) {
     delete rootProject.buildDir
 }
+
