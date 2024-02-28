@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "389383541718",
+    "project_id": "renalcare-fd7f5",
+    "storage_bucket": "renalcare-fd7f5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:389383541718:android:246046d3a48b78f60fca77",
+        "android_client_info": {
+          "package_name": "com.example.renalcare"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6KE2L_RQAkQhuwpDE_9ZWvCLtbUinsAg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
