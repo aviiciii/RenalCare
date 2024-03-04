@@ -8,6 +8,7 @@ import 'package:renalcare/pages/splashscreen.dart';
 import 'firebase_options.dart';
 import 'pages/Onbarding_user_detail2.dart';
 import 'pages/Onboarding_user_detail3.dart';
+import 'pages/Onboarding_user_detail4.dart';
 import 'pages/onboarding_user_details1.dart';
 
 // pages
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const OnboardingUserDetail3(),
+      home: const OnboardingUserDetail4(),
     );
   }
 }
