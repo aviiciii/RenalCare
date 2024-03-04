@@ -23,6 +23,14 @@
           }
         },
         {
+          "client_id": "389383541718-8ma6scmk620ajqpvnp2bp7np0nnvh4ng.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.renalcare",
+            "certificate_hash": "eb5e4c63b9400f529bcec139decff67b4434a388"
+          }
+        },
+        {
           "client_id": "389383541718-b01mb9rpd06pbtmmt0hoiaboj48opq98.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
