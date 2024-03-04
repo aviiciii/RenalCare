@@ -63,7 +63,7 @@ class SplashScreen2 extends StatelessWidget {
                       width: 30,
                     ),
                     ElevatedButton(
-                      onPressed: Get,
+                      onPressed: null,
                       child: Text('Next'),
                     ),
                   ],
