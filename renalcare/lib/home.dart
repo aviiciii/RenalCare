@@ -22,6 +22,7 @@ class _MyHomePageState extends State<MyHomePage> {
     _auth.authStateChanges().listen((event) {
       setState(() {
         _user = event;
+        print(_user);
       });
     });
   }
@@ -42,11 +43,21 @@ class _MyHomePageState extends State<MyHomePage> {
               Text('You are not signed in'),
               googlesignin_btn(),
             ] else ...[
+              
               Text('You are signed in'),
               Text(_user!.displayName ?? ''),
               Text(_user!.email ?? ''),
               Text(_user!.phoneNumber ?? ''),
-              Text(_user!.photoURL ?? ''),
+              if (_user != null && _user!.photoURL != null) ...[
+                CircleAvatar(
+                  backgroundImage: NetworkImage(_user!.photoURL!),
+                  radius: 50,
+                ),
+              ],
+              // print user
+              
+              
+              
               ElevatedButton(
                 onPressed: () async {
                   await _auth.signOut();
@@ -74,7 +85,7 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-
+  
 void _handleGoogleSignIn() async {
   try {
     GoogleAuthProvider googleProvider = GoogleAuthProvider();
