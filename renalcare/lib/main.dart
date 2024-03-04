@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 // firebase
 import 'package:firebase_core/firebase_core.dart';
-import 'package:renalcare/pages/splashScreen.dart';
+import 'package:renalcare/pages/splashScreen2.dart';
+import 'package:renalcare/pages/splashscreen.dart';
 import 'firebase_options.dart';
 
 // pages
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const splashScreen(),
+      home: SplashScreen2(),
     );
   }
 }
