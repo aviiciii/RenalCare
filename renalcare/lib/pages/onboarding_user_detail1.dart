@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class OnboardingUserDetails1 extends StatelessWidget {
-  const OnboardingUserDetails1({super.key});
+class OnboardingUserDetail1 extends StatelessWidget {
+  const OnboardingUserDetail1({super.key});
 
   @override
   Widget build(BuildContext context) {

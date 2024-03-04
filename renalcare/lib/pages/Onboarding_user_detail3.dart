@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class OnboardingUserDetails2 extends StatelessWidget {
-  const OnboardingUserDetails2({super.key});
+class OnboardingUserDetail3 extends StatelessWidget {
+  const OnboardingUserDetail3({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -10,14 +10,17 @@ class OnboardingUserDetails2 extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text(
-              'Are you on \n Dialysis?',
+          const Center(
+            child: Text(
+              'Do you have \n High Blood Pressure?',
               style: TextStyle(
                 fontSize: 30,
                 fontWeight: FontWeight.bold,
               ),
+              textAlign: TextAlign.center,
             ),
-            const SizedBox(height: 16),
+          ),
+          const SizedBox(height: 16),
             TextButton(
               onPressed: () {
                 // Add your logic here
