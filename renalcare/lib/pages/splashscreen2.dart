@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/get_core.dart';
+import 'package:renalcare/pages/graph/bar_chart.dart';
+import 'package:renalcare/pages/graph/graph.dart';
+import 'package:renalcare/pages/splashscreen2.dart';
 
 class SplashScreen2 extends StatelessWidget {
   @override
@@ -25,7 +30,7 @@ class SplashScreen2 extends StatelessWidget {
                 // bottomRight: Radius.circular(40.0),
               ),
             ),
-            child: const Column(
+            child: Column(
               children: [
                 SizedBox(
                   height: 50,
@@ -55,15 +60,21 @@ class SplashScreen2 extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     ElevatedButton(
-                      onPressed: null,
+                      onPressed: () {
+                        // Get.to(OnbardingUserDetail1());
+                      },
                       child:
                           Text('Skip', style: TextStyle(color: Colors.white)),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 30,
                     ),
                     ElevatedButton(
-                      onPressed: Get,
+                      onPressed: () {
+                        Get.to(const barChart(
+                          weeklySummary: [10, 20, 30, 40, 50, 60, 70],
+                        ));
+                      },
                       child: Text('Next'),
                     ),
                   ],
