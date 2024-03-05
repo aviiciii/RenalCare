@@ -7,6 +7,8 @@ import 'firebase_options.dart';
 // pages
 import 'package:renalcare/pages/login/google_sign_in.dart';
 
+import 'pages/login/1.dart';
+
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
@@ -27,7 +29,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(),
+      home: const login(),
     );
   }
 }
