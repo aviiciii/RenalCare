@@ -2,17 +2,10 @@ import 'package:flutter/material.dart';
 
 // firebase
 import 'package:firebase_core/firebase_core.dart';
-import 'package:renalcare/pages/login.dart';
-import 'package:renalcare/pages/splashScreen.dart';
-import 'package:renalcare/pages/splashScreen2.dart';
-import 'package:renalcare/pages/splashscreen.dart';
 import 'firebase_options.dart';
-import 'pages/Onbarding_user_detail2.dart';
-import 'pages/Onboarding_user_detail3.dart';
-import 'pages/Onboarding_user_detail4.dart';
-import 'pages/onboarding_user_details1.dart';
 
 // pages
+import 'package:renalcare/pages/login/google_sign_in.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -34,7 +27,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const login(),
+      home: MyHomePage(),
     );
   }
 }
