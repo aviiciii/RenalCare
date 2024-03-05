@@ -10,16 +10,7 @@ class myGraph extends StatefulWidget {
 
 class _myGraphState extends State<myGraph> {
   // List of calories
-  List<double> weeklySummary = [
-    4,
-    40,
-    2.50,
-    42.42,
-    10.50,
-    100.20,
-    88.99,
-    90.10
-  ];
+  List<int> weeklySummary = [4, 40, 2, 42, 10, 100, 88, 90];
 
   @override
   Widget build(BuildContext context) {
