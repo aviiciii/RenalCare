@@ -31,34 +31,12 @@ class OnboardingUserDetail1 extends StatelessWidget {
                       // Add your logic here
                     },
                   ),
-                  const Text('CDK STAGE 1', 
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                  ),
-                  ),
-                ],
-              ),
-            ),
-            const SizedBox(height: 8),
-            TextButton(
-              onPressed: () {
-                // Add your logic here
-              },
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Checkbox(
-                    value: false,
-                    onChanged: (value) {
-                      // Add your logic here
-                    },
-                  ),
-                  const Text('CDK STAGE 2', 
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  const Text(
+                    'CDK STAGE 1',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ],
               ),
@@ -77,16 +55,17 @@ class OnboardingUserDetail1 extends StatelessWidget {
                       // Add your logic here
                     },
                   ),
-                  const Text('CDK STAGE 3', 
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  const Text(
+                    'CDK STAGE 2',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ],
               ),
             ),
-            const SizedBox(height: 8,),
+            const SizedBox(height: 8),
             TextButton(
               onPressed: () {
                 // Add your logic here
@@ -100,16 +79,19 @@ class OnboardingUserDetail1 extends StatelessWidget {
                       // Add your logic here
                     },
                   ),
-                  const Text('CDK STAGE 4', 
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  const Text(
+                    'CDK STAGE 3',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ],
               ),
             ),
-            const SizedBox(height: 8,),
+            const SizedBox(
+              height: 8,
+            ),
             TextButton(
               onPressed: () {
                 // Add your logic here
@@ -123,16 +105,45 @@ class OnboardingUserDetail1 extends StatelessWidget {
                       // Add your logic here
                     },
                   ),
-                  const Text('CDK STAGE 5', 
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  const Text(
+                    'CDK STAGE 4',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ],
               ),
             ),
-            const SizedBox(height: 8,),// Add more checklist items as needed
+            const SizedBox(
+              height: 8,
+            ),
+            TextButton(
+              onPressed: () {
+                // Add your logic here
+              },
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Checkbox(
+                    value: false,
+                    onChanged: (value) {
+                      // Add your logic here
+                    },
+                  ),
+                  const Text(
+                    'CDK STAGE 5',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(
+              height: 8,
+            ), // Add more checklist items as needed
           ],
         ),
       ),
