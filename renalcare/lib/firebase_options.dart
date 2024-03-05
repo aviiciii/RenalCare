@@ -49,6 +49,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '389383541718',
     projectId: 'renalcare-fd7f5',
     authDomain: 'renalcare-fd7f5.firebaseapp.com',
+    databaseURL: 'https://renalcare-fd7f5-default-rtdb.asia-southeast1.firebasedatabase.app',
     storageBucket: 'renalcare-fd7f5.appspot.com',
     measurementId: 'G-DYXR4YG0ZK',
   );
@@ -58,6 +59,7 @@ class DefaultFirebaseOptions {
     appId: '1:389383541718:android:246046d3a48b78f60fca77',
     messagingSenderId: '389383541718',
     projectId: 'renalcare-fd7f5',
+    databaseURL: 'https://renalcare-fd7f5-default-rtdb.asia-southeast1.firebasedatabase.app',
     storageBucket: 'renalcare-fd7f5.appspot.com',
   );
 
@@ -66,7 +68,10 @@ class DefaultFirebaseOptions {
     appId: '1:389383541718:ios:13e1bddb316c82c30fca77',
     messagingSenderId: '389383541718',
     projectId: 'renalcare-fd7f5',
+    databaseURL: 'https://renalcare-fd7f5-default-rtdb.asia-southeast1.firebasedatabase.app',
     storageBucket: 'renalcare-fd7f5.appspot.com',
+    androidClientId: '389383541718-2dcnsnq2me932ebncqs07ckjad52inis.apps.googleusercontent.com',
+    iosClientId: '389383541718-bum9baitf4bmcbdg3rtcr8phvuc9dn7j.apps.googleusercontent.com',
     iosBundleId: 'com.example.renalcare',
   );
 
@@ -75,7 +80,10 @@ class DefaultFirebaseOptions {
     appId: '1:389383541718:ios:f1c5dd05635c950f0fca77',
     messagingSenderId: '389383541718',
     projectId: 'renalcare-fd7f5',
+    databaseURL: 'https://renalcare-fd7f5-default-rtdb.asia-southeast1.firebasedatabase.app',
     storageBucket: 'renalcare-fd7f5.appspot.com',
+    androidClientId: '389383541718-2dcnsnq2me932ebncqs07ckjad52inis.apps.googleusercontent.com',
+    iosClientId: '389383541718-vkkebpp2rln9kutfsp8ftgv8lh4rr13c.apps.googleusercontent.com',
     iosBundleId: 'com.example.renalcare.RunnerTests',
   );
 }
