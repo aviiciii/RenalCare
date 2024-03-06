@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 // firebase
 import 'package:firebase_core/firebase_core.dart';
+import 'package:renalcare/pages/homepage.dart';
+import 'package:renalcare/pages/splashscreen/1.dart';
 import 'firebase_options.dart';
 import 'package:get/get.dart';
 
@@ -31,7 +33,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const discover(),
+      home: splashScreen(),
     );
   }
 }
