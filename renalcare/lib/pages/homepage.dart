@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:renalcare/widgets/navbar.dart';
 import 'package:renalcare/widgets/bottomnav.dart';
 
 class homePage extends StatelessWidget {
@@ -7,14 +8,15 @@ class homePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: NavBar(),
       appBar: AppBar(
         backgroundColor: Colors.blue,
         toolbarHeight: 100,
         centerTitle: true,
-        leading: const Icon(
-          Icons.menu,
-          size: 40,
-        ),
+        // leading: const Icon(
+        //   Icons.menu,
+        //   size: 40,
+        // ),
         title: const Text(
           "Welcome!",
           style: TextStyle(color: Colors.white, fontSize: 26),
