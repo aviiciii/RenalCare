@@ -2,11 +2,16 @@ import 'package:flutter/material.dart';
 
 // firebase
 import 'package:firebase_core/firebase_core.dart';
-import 'package:renalcare/input.dart';
+import 'package:renalcare/pages/homepage.dart';
+import 'package:renalcare/pages/splashscreen/1.dart';
 import 'firebase_options.dart';
+import 'package:get/get.dart';
 
 // pages
 import 'package:renalcare/pages/login/google_sign_in.dart';
+
+import 'pages/discover.dart';
+import 'pages/splashscreen/3.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -22,13 +27,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'RenalCare',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: TextFieldPage(),
+      home: splashScreen(),
     );
   }
 }

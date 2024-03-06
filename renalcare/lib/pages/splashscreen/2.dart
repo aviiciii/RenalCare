@@ -3,7 +3,9 @@ import 'package:get/get.dart';
 import 'package:get/get_core/get_core.dart';
 import 'package:renalcare/pages/graph/bar_chart.dart';
 import 'package:renalcare/pages/graph/graph.dart';
+import 'package:renalcare/pages/splashscreen/1.dart';
 import 'package:renalcare/pages/splashscreen/2.dart';
+import 'package:renalcare/pages/splashscreen/3.dart';
 
 class SplashScreen2 extends StatelessWidget {
   @override
@@ -32,23 +34,24 @@ class SplashScreen2 extends StatelessWidget {
             ),
             child: Column(
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 50,
                 ),
                 //Text Welcome to
-                Text(
+                const Text(
                   "Welcome to",
                   style: TextStyle(fontSize: 30),
                 ),
                 //text RenalCare
 
-                Text(
+                const Text(
                   'Renal Care',
                   style: TextStyle(fontSize: 40),
                 ),
                 //Description
-                Padding(
-                  padding: EdgeInsets.all(20.0),
+                const Padding(
+                  padding: EdgeInsets.only(
+                      top: 30.0, bottom: 30, left: 30, right: 40),
                   child: Text(
                       "\“Your personalised Dietary Plan App for Kidney Patients\”  ",
                       style: TextStyle(fontSize: 20)),
@@ -63,19 +66,22 @@ class SplashScreen2 extends StatelessWidget {
                       onPressed: () {
                         // Get.to(OnbardingUserDetail1());
                       },
-                      child:
-                          Text('Skip', style: TextStyle(color: Colors.white)),
+                      child: const Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Text('Skip'),
+                      ),
                     ),
                     const SizedBox(
                       width: 30,
                     ),
                     ElevatedButton(
                       onPressed: () {
-                        Get.to(const barChart(
-                          weeklySummary: [10, 20, 30, 40, 50, 60, 70],
-                        ));
+                        Get.to(splashScreen3());
                       },
-                      child: Text('Next'),
+                      child: const Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Text('Next'),
+                      ),
                     ),
                   ],
                 )
