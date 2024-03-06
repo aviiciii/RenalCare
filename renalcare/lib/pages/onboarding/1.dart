@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:renalcare/pages/onboarding/2.dart';
+import 'package:renalcare/widgets/nextbutton.dart';
 
 class OnboardingUserDetail1 extends StatelessWidget {
   const OnboardingUserDetail1({super.key});
@@ -142,7 +146,20 @@ class OnboardingUserDetail1 extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: 8,
+              height: 15,
+            ),
+
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                ElevatedButton(
+                  onPressed: () {
+                    Get.to(OnboardingUserDetail2());
+                  },
+                  child: Icon(Icons.arrow_forward_outlined),
+                ),
+                SizedBox(width: 40)
+              ],
             ), // Add more checklist items as needed
           ],
         ),
