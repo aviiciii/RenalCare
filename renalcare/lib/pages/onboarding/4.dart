@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:renalcare/pages/discover.dart';
+import 'package:renalcare/pages/homepage.dart';
 
 class OnboardingUserDetail4 extends StatelessWidget {
   const OnboardingUserDetail4({super.key});
@@ -76,7 +77,7 @@ class OnboardingUserDetail4 extends StatelessWidget {
               children: [
                 ElevatedButton(
                   onPressed: () {
-                    Get.to(discover());
+                    Get.to(homePage());
                   },
                   child: Icon(Icons.arrow_forward_outlined),
                 ),

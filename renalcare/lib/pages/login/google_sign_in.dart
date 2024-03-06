@@ -1,5 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:renalcare/pages/homepage.dart';
 import 'package:sign_in_button/sign_in_button.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -10,7 +12,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   final FirebaseAuth _auth = FirebaseAuth.instance;
 
   User? _user;
@@ -25,7 +26,6 @@ class _MyHomePageState extends State<MyHomePage> {
       });
     });
   }
-
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +42,6 @@ class _MyHomePageState extends State<MyHomePage> {
               Text('You are not signed in'),
               googlesignin_btn(),
             ] else ...[
-              
               Text('You are signed in'),
               Text(_user!.displayName ?? ''),
               Text(_user!.email ?? ''),
@@ -54,9 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ],
               // print user
-              
-              
-              
+
               ElevatedButton(
                 onPressed: () async {
                   await _auth.signOut();
@@ -71,27 +68,24 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   Widget googlesignin_btn() {
-    return Center( 
-
-      child: SizedBox(height: 50,
-        width: 200,
-        child: SignInButton(
-          Buttons.google,
-          text: "Sign in with Google",
-          onPressed: _handleGoogleSignIn,
-        )
-      )
-    );
+    return Center(
+        child: SizedBox(
+            height: 50,
+            width: 200,
+            child: SignInButton(
+              Buttons.google,
+              text: "Sign in with Google",
+              onPressed: _handleGoogleSignIn,
+            )));
   }
 
-  
-void _handleGoogleSignIn() async {
-  try {
-    GoogleAuthProvider googleProvider = GoogleAuthProvider();
-    _auth.signInWithProvider(googleProvider);
-
-  } catch (e) {
-    print(e);
+  void _handleGoogleSignIn() async {
+    try {
+      GoogleAuthProvider googleProvider = GoogleAuthProvider();
+      _auth.signInWithProvider(googleProvider);
+      Get.to(homePage());
+    } catch (e) {
+      print(e);
+    }
   }
-}
 }

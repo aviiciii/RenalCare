@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:renalcare/pages/login/1.dart';
 import 'package:renalcare/pages/onboarding/1.dart';
 
 class splashScreen3 extends StatelessWidget {
@@ -64,7 +65,7 @@ class splashScreen3 extends StatelessWidget {
                     ),
                     ElevatedButton(
                       onPressed: () {
-                        Get.to(const OnboardingUserDetail1());
+                        Get.to(const login());
                       },
                       child: const Padding(
                         padding: EdgeInsets.all(8.0),
