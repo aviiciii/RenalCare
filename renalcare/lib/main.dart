@@ -8,6 +8,9 @@ import 'package:get/get.dart';
 // pages
 import 'package:renalcare/pages/login/google_sign_in.dart';
 
+import 'pages/discover.dart';
+import 'pages/splashscreen/3.dart';
+
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
@@ -28,7 +31,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(),
+      home: const discover(),
     );
   }
 }

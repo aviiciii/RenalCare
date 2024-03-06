@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:renalcare/widgets/bottomnav.dart';
 
 class discover extends StatelessWidget {
   const discover({super.key});
@@ -40,10 +41,11 @@ class discover extends StatelessWidget {
                 ),
               ),
             ),
-            Row(
+            Row(  
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Container(
+                  child: Image.network('https://p1.hiclipart.com/preview/653/92/937/indian-food-idli-sambar-indian-cuisine-rava-idli-south-indian-cuisine-breakfast-dal-png-clipart.jpg'),
                   width: 100,
                   height: 100,
                   decoration: BoxDecoration(
@@ -54,8 +56,10 @@ class discover extends StatelessWidget {
                     ),
                   ),
                 ),
+                
                 const SizedBox(height: 150),
                 Container(
+                  child: Image.network('https://p1.hiclipart.com/preview/653/92/937/indian-food-idli-sambar-indian-cuisine-rava-idli-south-indian-cuisine-breakfast-dal-png-clipart.jpg'),
                   width: 100,
                   height: 100,
                   decoration: BoxDecoration(
@@ -220,6 +224,7 @@ class discover extends StatelessWidget {
           ],
         ),
       ),
+      bottomNavigationBar: bottomNav(),
     );
   }
 }
