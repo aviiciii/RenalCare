@@ -1,7 +1,28 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:sign_in_button/sign_in_button.dart';
 
-class login extends StatelessWidget {
+class login extends StatefulWidget {
   const login({super.key});
+
+  @override
+  State<login> createState() => _loginState();
+}
+
+class _loginState extends State<login> {
+  final FirebaseAuth _auth = FirebaseAuth.instance;
+  User? _user;
+
+  @override
+  void initState() {
+    super.initState();
+    _auth.authStateChanges().listen((event) {
+      setState(() {
+        _user = event;
+        print(_user);
+      });
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -19,20 +40,36 @@ class login extends StatelessWidget {
               fontWeight: FontWeight.bold, // Add font weight here
             ),
           ),
-          const SizedBox(height: 50), 
-          ElevatedButton(
-          child: Text('Sign in with Google'),
-          style: ElevatedButton.styleFrom(
-            foregroundColor: Colors.black,
-            textStyle: const TextStyle(
-                color: Colors.white,
-                 fontSize: 20, 
-                 fontStyle: FontStyle.normal),
-          ),
-          onPressed: () {},
-        ),
+          
+          googlesignin_btn(),
+          
+      
         ],
       ),
     );
   }
+
+  Widget googlesignin_btn() {
+    return Center( 
+
+      child: SizedBox(height: 50,
+        width: 200,
+        child: SignInButton(
+          Buttons.google,
+          text: "Sign in with Google",
+          onPressed: _handleGoogleSignIn,
+        )
+      )
+    );
+  }
+
+void _handleGoogleSignIn() async {
+  try {
+    GoogleAuthProvider googleProvider = GoogleAuthProvider();
+    _auth.signInWithProvider(googleProvider);
+
+  } catch (e) {
+    print(e);
+  }
+}
 }
