@@ -1,14 +1,23 @@
 from flask import Flask
 
+
+# connect flask to firebase
+import firebase_admin
+from firebase_admin import credentials, firestore
+
+cred = credentials.Certificate("firebase.json")
+firebase_admin.initialize_app(cred)
+db = firestore.client()
+print("connected to firebase")
+
+
+
 app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
     return "<p>Hello, World!</p>"
 
-from flask import Flask, request, jsonify
-
-app = Flask(__name__)
 
 
 def get_breakfast(uid):
@@ -26,3 +35,5 @@ routes = {
     "/dinner": get_dinner
 }
 
+if __name__ == "__main__":
+    app.run(debug=True, port=5005)
