@@ -28,6 +28,7 @@ class bottomNav extends StatelessWidget {
               BottomNavigationBarItem(
                 icon: Icon(Icons.search),
                 label: 'Discover',
+                
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.add_a_photo),
