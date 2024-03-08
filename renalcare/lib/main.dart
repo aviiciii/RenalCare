@@ -11,6 +11,8 @@ import 'package:get/get.dart';
 import 'package:renalcare/pages/login/google_sign_in.dart';
 
 import 'pages/discover.dart';
+import 'pages/food.dart';
+import 'pages/login/1.dart';
 import 'pages/splashscreen/3.dart';
 
 Future<void> main() async {
@@ -33,7 +35,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: splashScreen(),
+      home: const login(),
     );
   }
 }
